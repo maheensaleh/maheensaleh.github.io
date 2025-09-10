@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maheen Saleh - Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900 font-sans flex">
+
+<!-- Sidebar -->
+<aside class="fixed top-0 left-0 h-full w-56 bg-gray-100 border-r border-gray-200 flex flex-col justify-between">
+  <div class="p-6 pt-12">
+    <h1 class="text-xl font-bold">Maheen Saleh</h1>
+    <p class="text-sm text-gray-600 mb-6">AI Software Engineer | Researcher | Problem Solver</p>
+    
+    <nav class="space-y-4 mb-8">
+      <a href="#intro" class="block text-gray-700 hover:text-blue-600">Introduction</a>
+      <a href="#skills" class="block text-gray-700 hover:text-blue-600">Skills</a>
+      <a href="#projects" class="block text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="#experience" class="block text-gray-700 hover:text-blue-600">Work Experience</a>
+      <a href="#education" class="block text-gray-700 hover:text-blue-600">Education</a>
+      <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
+    </nav>
+
+    <!-- Social Links -->
+    <div class="space-y-2 text-sm">
+      <a href="mailto:salehmaheen@gmail.com" class="block text-blue-600 hover:underline">✉️ Email</a>
+      <a href="https://github.com/maheensaleh" target="_blank" class="block text-blue-600 hover:underline">💻 GitHub</a>
+      <a href="https://www.linkedin.com/in/maheensaleh40/" target="_blank" class="block text-blue-600 hover:underline">🔗 LinkedIn</a>
+    </div>
+  </div>
+
+  <div class="p-6 text-sm text-gray-500">
+    © 2025 Maheen Saleh
+  </div>
+</aside>
+
+
+
+  <!-- Main Content -->
+  <main class="ml-56 flex-1">
+<!-- Intro -->
+<section id="intro" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+  <!-- Greeting -->
+  <h2 class="text-5xl md:text-6xl font-bold mb-4">Hi, I’m Maheen 👋</h2>
+  <p class="text-xl md:text-2xl text-gray-700 mb-10">
+    👩‍💻 AI Software Engineer | Researcher | Problem Solver
+  </p>
+
+  <!-- Summary -->
+  <div class="max-w-3xl space-y-6 text-gray-600">
+    <p>
+      I specialize in building end-to-end AI applications — from dataset curation and research 
+      to model development and deployment. Currently, I’m pursuing my M.Sc. in Data Science and AI 
+      at Saarland University.
+    </p>
+    <p>
+      My thesis focuses on creating high-quality text–video datasets to improve video–language 
+      understanding, part of which was presented at the 
+      <span class="font-semibold text-gray-800">CVPR 2025 Workshop</span>.
+    </p>
+    <p>
+      As an AI Engineer and Researcher, I’ve developed applications in vision and NLP (LLMs): 
+      real-time object detection optimized with TensorRT, RAG-based chatbots with LangChain & Gemini API, 
+      and OCR-powered document analysis with Django.
+    </p>
+    <p>
+      My skills span Python AI libraries, DevOps tools (Docker, AWS, Git, Linux), 
+      and development frameworks (Django, FastAPI, JavaScript).
+    </p>
+  </div>
+
+  <!-- Chatbot CTA -->
+  <div class="mt-10">
+    <a href="https://huggingface.co/spaces/maheensaleh40/PersonalChatbot" 
+       target="_blank"
+       class="px-6 py-3 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">
+       🤖 Try My Profile ChatBot
+    </a>
+  </div>
+
+  <!-- Social Links -->
+  <div class="mt-8 flex space-x-6">
+    <a href="mailto:salehmaheen@gmail.com" class="text-blue-600 hover:underline">Email</a>
+    <a href="https://github.com/maheensaleh" class="text-blue-600 hover:underline">GitHub</a>
+    <a href="https://www.linkedin.com/in/maheensaleh40/" class="text-blue-600 hover:underline">LinkedIn</a>
+  </div>
+</section>
+
+
+    <!-- Skills -->
+    <section id="skills" class="py-16 px-6 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-6 text-center">Skills</h2>
+      <div class="grid md:grid-cols-2 gap-6 text-gray-700">
+        <div>
+          <h3 class="font-bold mb-2">ML & AI</h3>
+          <p>PyTorch, HuggingFace, OpenCV, LangChain, OpenAI API, SkLearn, Prompt Engineering, Multi-modal Learning</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">Development</h3>
+          <p>Django, Flask, Streamlit, JavaScript, Node.js, SQL/NoSQL</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">DevOps</h3>
+          <p>Docker, AWS (SageMaker, EC2, Lambda, S3), WandB, Neptune, Git, Linux</p>
+        </div>
+        <div>
+          <h3 class="font-bold mb-2">Languages</h3>
+          <p>English (C1), German (A2)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-16 px-6 bg-gray-50">
+      <h2 class="text-3xl font-semibold text-center mb-10">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Profile ChatBot</h3>
+          <p class="text-gray-600 mb-4">
+            Personal chatbot answering recruiter queries using portfolio documents. 
+            Built with LangChain, FAISS, HuggingFace, and Gemini API.
+          </p>
+          <a href="https://huggingface.co/spaces/maheensaleh40/PersonalChatbot" class="text-blue-600 hover:underline">View Project →</a>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-xl font-bold mb-2">Multi-Modal Image Search</h3>
+          <p class="text-gray-600 mb-4">
+            Improved image search by combining visual and semantic embeddings from 10k COCO images. 
+            Achieved 41% precision and 54% recall using ResNet50, EfficientNet, and GPT-2.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Experience -->
+    <section id="experience" class="py-16 px-6 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-10">Work Experience</h2>
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-xl font-bold">AI Researcher – MPI Informatics</h3>
+          <p class="text-gray-600 text-sm">Jun 2024 – Present | Germany</p>
+          <p class="mt-2 text-gray-700">Built a video-caption dataset (10M captions) with LLMs and fine-tuned video-language models, improving retrieval and chapter generation metrics.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">AI Researcher – DFKI</h3>
+          <p class="text-gray-600 text-sm">Jul 2023 – May 2024 | Germany</p>
+          <p class="mt-2 text-gray-700">Designed pipelines for evaluating and fine-tuning vision models, improving steel scrap classification precision by 10.5%.</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-bold">Associate Software Engineer – Squarera</h3>
+          <p class="text-gray-600 text-sm">Dec 2021 – Mar 2023 | Remote (UK)</p>
+          <p class="mt-2 text-gray-700">Automated KYC workflows and managed product data migration with Oracle/MS SQL.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="py-16 px-6 max-w-4xl mx-auto bg-gray-50">
+      <h2 class="text-3xl font-semibold text-center mb-10">Education</h2>
+      <ul class="space-y-6 text-gray-700">
+        <li>
+          <h3 class="text-xl font-bold">M.Sc. Data Science and AI</h3>
+          <p>Saarland University, Germany (2023 – 2025)<br>
+          Deutschlandstipendium Scholarship</p>
+        </li>
+        <li>
+          <h3 class="text-xl font-bold">B.Eng. Computer Systems</h3>
+          <p>NED University of Engineering & Technology, Pakistan (2018 – 2022)<br>
+          1st Position, Ehsaas Undergraduate Scholarship</p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 px-6 text-center">
+      <h2 class="text-3xl font-semibold mb-6">Get In Touch</h2>
+      <p class="text-gray-700 mb-6">Feel free to reach out if you’d like to collaborate or just say hello.</p>
+      <a href="mailto:salehmaheen@gmail.com" class="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Email Me</a>
+    </section>
+  </main>
+</body>
+</html>
