@@ -137,26 +137,87 @@
     </section>
 
     <!-- Work Experience -->
-    <section id="experience" class="py-16 px-6 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-semibold text-center mb-10">Work Experience</h2>
-      <div class="space-y-6">
-        <div>
-          <h3 class="text-xl font-bold">AI Researcher – MPI Informatics</h3>
-          <p class="text-gray-600 text-sm">Jun 2024 – Present | Germany</p>
-          <p class="mt-2 text-gray-700">Built a video-caption dataset (10M captions) with LLMs and fine-tuned video-language models, improving retrieval and chapter generation metrics.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold">AI Researcher – DFKI</h3>
-          <p class="text-gray-600 text-sm">Jul 2023 – May 2024 | Germany</p>
-          <p class="mt-2 text-gray-700">Designed pipelines for evaluating and fine-tuning vision models, improving steel scrap classification precision by 10.5%.</p>
-        </div>
-        <div>
-          <h3 class="text-xl font-bold">Associate Software Engineer – Squarera</h3>
-          <p class="text-gray-600 text-sm">Dec 2021 – Mar 2023 | Remote (UK)</p>
-          <p class="mt-2 text-gray-700">Automated KYC workflows and managed product data migration with Oracle/MS SQL.</p>
-        </div>
+
+<!-- Work Experience -->
+<section id="experience" class="py-16 px-6 bg-gray-50">
+  <h2 class="text-3xl font-semibold text-center mb-10">Work Experience</h2>
+
+  <div class="space-y-8 max-w-4xl mx-auto">
+
+    <!-- MPI -->
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-1">AI Researcher</h3>
+      <p class="text-sm text-gray-600 mb-2">Jun. 2024 – Present<br>Max Planck Institute for Informatics - MPI, Germany</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+        <li>Built a video-caption dataset by applying prompt engineering to state-of-the-art LLMs (Llama, Mistral, Gemma, o4-mini), converting noisy subtitles into 10M good-quality captions (accepted in CVPR 2025 Workshop)</li>
+        <li>Utilized the LLM-generated captions to fine-tune video-language models, improving MeanRecall by 1.88% for video retrieval, and BLEU score by 18.9% for video chapter generation task</li>
+        <li>Developed pipeline for data download and pre-processing a large-scale video dataset, HDVILA-100M, reduced the required storage by 40% using HEVC video compression</li>
+      </ul>
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">LLMs</span>
+        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Fine-tuning</span>
+        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Prompt Engineering</span>
+        <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-sm">Video-Language Models</span>
       </div>
-    </section>
+    </div>
+
+    <!-- DFKI -->
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-1">AI Researcher</h3>
+      <p class="text-sm text-gray-600 mb-2">Jul. 2023 – May. 2024<br>Deutsches Forschungszentrum für Künstliche Intelligenz - DFKI, Germany</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+        <li>Designed training and evaluation pipeline for 8 state-of-the-art vision models to assess model performance and efficiency in terms of carbon consumption</li>
+        <li>Fine-tuned these vision models for steel scrap classification on the dataset of European Steel Scrap by SaarStahl, achieving 10.5% improvement in precision</li>
+      </ul>
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Object Detection</span>
+        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Image Classification</span>
+        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Vision Models</span>
+        <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-sm">Carbon Efficiency</span>
+      </div>
+    </div>
+
+    <!-- Squarera Associate -->
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-1">Associate Software Engineer</h3>
+      <p class="text-sm text-gray-600 mb-2">Dec. 2021 – Mar. 2023<br>Squarera, UK (Remote)</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+        <li>Managed integration and migration of product development data using Oracle and MS SQL</li>
+        <li>Automated KYC (know-your-customer) data collection of Company House UK records using Scrapy, Django, and scheduled workflows, reducing the manual processing time</li>
+      </ul>
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">SQL</span>
+        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Django</span>
+        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Web Scraping</span>
+        <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-sm">Automation</span>
+      </div>
+    </div>
+
+    <!-- Squarera Intern -->
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-1">Data Science Intern</h3>
+      <p class="text-sm text-gray-600 mb-2">Sept. 2021 – Nov. 2021<br>Squarera, UK (Remote)</p>
+      <ul class="list-disc list-inside text-gray-700 space-y-1 mb-4">
+        <li>Designed pipeline for analysis of identification documents with EasyOCR and OpenCV, used Django to create an interactive user interface for real-time identity verification.</li>
+        <li>Implemented real-time object detection and tracking pipeline for CCTV video streams based on RTSP for surveillance through MediaPipe, TensorFlow-Hub models, and Django</li>
+      </ul>
+      <!-- Tags -->
+      <div class="flex flex-wrap gap-2">
+        <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-sm">OCR</span>
+        <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-sm">Object Detection and Tracking</span>
+        <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-sm">OpenCV</span>
+        <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-sm">Vision Models</span>
+        <span class="px-3 py-1 bg-pink-100 text-pink-700 rounded-full text-sm">Django</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
     <!-- Education -->
     <section id="education" class="py-16 px-6 max-w-4xl mx-auto bg-gray-50">
