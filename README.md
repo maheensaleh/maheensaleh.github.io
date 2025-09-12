@@ -14,6 +14,13 @@ It showcases my education, work experience, projects, skills, and research in AI
 - **Education** — Academic background and scholarships.  
 - **Contact** — Links to reach me via email, GitHub, and LinkedIn.  
 
+## Todos
+
+- add thesis details in education
+- add other projects from github
+- add levels in skills section
+- embedding the profile chatbot from hf spaces
+
 ## 🛠️ Tech Stack
 - [Tailwind CSS](https://tailwindcss.com/) — for clean and responsive styling  
 - **HTML5** — minimal structure  
