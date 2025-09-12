@@ -20,6 +20,7 @@ It showcases my education, work experience, projects, skills, and research in AI
 - add other projects from github
 - add levels in skills section
 - embedding the profile chatbot from hf spaces
+- improve projects section
 
 ## 🛠️ Tech Stack
 - [Tailwind CSS](https://tailwindcss.com/) — for clean and responsive styling  
