@@ -5,64 +5,131 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Maheen Saleh - Portfolio</title>
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-white text-gray-900 font-sans flex">
 
 <!-- Sidebar -->
-<aside class="fixed top-0 left-0 h-full w-56 bg-gray-100 border-r border-gray-200 flex flex-col justify-between">
-  <div class="p-6 pt-12">
-    <h1 class="text-xl font-bold">Maheen Saleh</h1>
-    <p class="text-sm text-gray-600 mb-6">AI Software Engineer | Researcher | Problem Solver</p>
-    
-    <nav class="space-y-4 mb-8">
-      <a href="#intro" class="block text-gray-700 hover:text-blue-600">Introduction</a>
-      <a href="#skills" class="block text-gray-700 hover:text-blue-600">Skills</a>
-      <a href="#projects" class="block text-gray-700 hover:text-blue-600">Projects</a>
-      <a href="#experience" class="block text-gray-700 hover:text-blue-600">Work Experience</a>
-      <a href="#education" class="block text-gray-700 hover:text-blue-600">Education</a>
-      <a href="#contact" class="block text-gray-700 hover:text-blue-600">Contact</a>
-    </nav>
+<aside class="fixed top-0 left-0 h-full w-56 bg-gray-100 border-r border-gray-200 flex flex-col shadow-sm">
 
-    <!-- Social Links -->
-    <div class="space-y-2 text-sm">
-      <a href="mailto:salehmaheen@gmail.com" class="block text-blue-600 hover:underline">✉️ Email</a>
-      <a href="https://github.com/maheensaleh" target="_blank" class="block text-blue-600 hover:underline">💻 GitHub</a>
-      <a href="https://www.linkedin.com/in/maheensaleh40/" target="_blank" class="block text-blue-600 hover:underline">🔗 LinkedIn</a>
-    </div>
+  <!-- Top Section -->
+  <div class="p-6 pt-10 flex flex-col items-center">
+    <!-- Profile Pic -->
+    <img src="data/profile.jpeg" alt="Maheen Saleh" class="w-20 h-20 rounded-full shadow mb-4 object-cover">
+
+    <!-- Name + Title -->
+    <h1 class="text-lg font-bold text-gray-800">Maheen Saleh</h1>
+    <p class="text-xs text-gray-600 text-center mb-6">AI Software Engineer<br>Researcher | Problem Solver</p>
+    
+    <!-- Navigation -->
+    <nav class="space-y-2 w-full text-sm">
+      <!-- Intro -->
+      <a href="#intro" class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+<i class="fas fa-user"></i>
+        <span class="ml-2">Introduction</span>
+      </a>
+
+      <!-- Skills -->
+      <a href="#skills" class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+<!-- Skills -->
+<i class="fas fa-cogs"></i>   <!-- (or fa-tools if you prefer tools instead of gear) -->
+
+
+        <span class="ml-2">Skills</span>
+      </a>
+
+      <!-- Projects -->
+      <a href="#projects" class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+<!-- Projects -->
+<i class="fas fa-folder"></i>
+
+
+        <span class="ml-2">Projects</span>
+      </a>
+
+      <!-- Experience -->
+      <a href="#experience" class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+<!-- Work Experience -->
+<i class="fas fa-briefcase"></i>
+        <span class="ml-2">Work Experience</span>
+      </a>
+
+      <!-- Education -->
+      <a href="#education" class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+<!-- Education (Graduation Cap) -->
+<!-- Education -->
+<i class="fas fa-graduation-cap"></i>
+        <span class="ml-2">Education</span>
+      </a>
+
+      <!-- Contact -->
+      <a href="#contact" class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+<!-- Contact -->
+<i class="fas fa-envelope"></i>
+        <span class="ml-2">Contact</span>
+      </a>
+    </nav>
   </div>
 
-  <div class="p-6 text-sm text-gray-500">
-    © 2025 Maheen Saleh
+  <!-- Bottom Section (moved up with mt-auto) -->
+  <div class="p-6 text-xs text-gray-500 text-center border-t border-gray-200 mt-auto mb-8">
+    <div class="space-y-3 mb-4">
+      <a href="https://www.linkedin.com/in/maheensaleh40/" target="_blank" class="flex items-center justify-center text-blue-600 hover:underline">
+        <i class="fab fa-linkedin mr-2"></i>LinkedIn
+      </a>
+      <a href="https://github.com/maheensaleh" target="_blank" class="flex items-center justify-center text-blue-600 hover:underline">
+        <i class="fab fa-github mr-2"></i>GitHub
+      </a>
+      <a href="mailto:salehmaheen@gmail.com" class="flex items-center justify-center text-blue-600 hover:underline">
+        <i class="fas fa-envelope mr-2"></i>Email
+      </a>
+
+
+    </div>
+    <p class="text-gray-400">© 2025 Maheen Saleh</p>
   </div>
 </aside>
 
 
-
   <!-- Main Content -->
   <main class="ml-56 flex-1">
+
+
 <!-- Intro -->
 <section id="intro" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
-  <!-- Greeting -->
-  <h2 class="text-5xl md:text-6xl font-bold mb-4">Hi, I’m Maheen 👋</h2>
-  <p class="text-xl md:text-2xl text-gray-700 mb-10">
-    👩‍💻 AI Software Engineer | Researcher | Problem Solver
-  </p>
 
-  <!-- Summary -->
-  <div class="max-w-3xl space-y-6 text-gray-600">
-    <p>
+<!-- Greeting + Profile Picture -->
+<div class="max-w-3xl w-full flex flex-col md:flex-row items-center md:items-end md:justify-between gap-8 mb-8">
+  <!-- Greeting (Left) -->
+  <div class="text-center md:text-left">
+    <h2 class="text-3xl md:text-4xl font-bold mb-2">Hi, I’m Maheen 👋</h2>
+    <p class="text-base md:text-lg text-gray-700 mb-8">
+      👩‍💻 AI Software Engineer | Researcher | Problem Solver
+    </p>
+  </div>
+
+  <!-- Profile Picture (Right) -->
+  <div>
+    <img src="data/profile.jpeg" alt="Maheen Saleh" 
+         class="w-32 h-32 rounded-full shadow-lg object-cover">
+  </div>
+</div>
+
+  <!-- Summary Card -->
+  <div class="max-w-3xl bg-white shadow-lg rounded-xl p-8 text-left text-gray-600">
+    <p class="mb-4">
       I specialize in building end-to-end AI applications — from dataset curation and research 
       to model development and deployment. Currently, I’m pursuing my M.Sc. in Data Science and AI 
       at Saarland University.
     </p>
-    <p>
+    <p class="mb-4">
       My thesis focuses on creating high-quality text–video datasets to improve video–language 
       understanding, part of which was presented at the 
       <span class="font-semibold text-gray-800">CVPR 2025 Workshop</span>.
     </p>
-    <p>
+    <p class="mb-4">
       As an AI Engineer and Researcher, I’ve developed applications in vision and NLP (LLMs): 
       real-time object detection optimized with TensorRT, RAG-based chatbots with LangChain & Gemini API, 
       and OCR-powered document analysis with Django.
@@ -82,13 +149,20 @@
     </a>
   </div>
 
-  <!-- Social Links -->
-  <div class="mt-8 flex space-x-6">
-    <a href="mailto:salehmaheen@gmail.com" class="text-blue-600 hover:underline">Email</a>
-    <a href="https://github.com/maheensaleh" class="text-blue-600 hover:underline">GitHub</a>
-    <a href="https://www.linkedin.com/in/maheensaleh40/" class="text-blue-600 hover:underline">LinkedIn</a>
-  </div>
+<!-- Social Links -->
+<div class="mt-8 flex space-x-6">
+  <a href="https://www.linkedin.com/in/maheensaleh40/" class="flex items-center text-blue-600 hover:underline">
+    <i class="fab fa-linkedin mr-2"></i>LinkedIn
+  </a>
+  <a href="https://github.com/maheensaleh" class="flex items-center text-blue-600 hover:underline">
+    <i class="fab fa-github mr-2"></i>GitHub
+  </a>
+  <a href="mailto:salehmaheen@gmail.com" class="flex items-center text-blue-600 hover:underline">
+    <i class="fas fa-envelope mr-2"></i>Email
+  </a>
+</div>
 </section>
+
 
 
     <!-- Skills -->
