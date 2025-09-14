@@ -24,6 +24,7 @@ It showcases my education, work experience, projects, skills, and research in AI
 - make it responsive
 - add internships
 - add details button to education, work experiece and insternships and projects
+- add translate to german feature
 
 
 ## 🛠️ Tech Stack
