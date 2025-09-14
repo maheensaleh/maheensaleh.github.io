@@ -21,6 +21,10 @@ It showcases my education, work experience, projects, skills, and research in AI
 - add levels in skills section
 - embedding the profile chatbot from hf spaces
 - improve projects section
+- make it responsive
+- add internships
+- add details button to education, work experiece and insternships and projects
+
 
 ## 🛠️ Tech Stack
 - [Tailwind CSS](https://tailwindcss.com/) — for clean and responsive styling  

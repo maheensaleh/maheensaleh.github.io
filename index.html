@@ -8,77 +8,51 @@
   <link rel="icon"
     href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👩‍💻</text></svg>">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white text-gray-900 font-sans flex">
+<body class="bg-white text-gray-900 font-sans">
 
-  <!-- Sidebar -->
-  <aside class="fixed top-0 left-0 h-full w-56 bg-gray-100 border-r border-gray-200 flex flex-col shadow-sm">
+  <!-- Sidebar (Desktop only) -->
+  <aside
+    class="hidden md:flex fixed top-0 left-0 h-full w-56 bg-gray-100 border-r border-gray-200 flex-col shadow-sm z-20">
 
     <!-- Top Section -->
     <div class="p-6 pt-10 flex flex-col items-center">
-      <!-- Profile Pic -->
       <img src="data/profile.jpeg" alt="Maheen Saleh" class="w-20 h-20 rounded-full shadow mb-4 object-cover">
-
-      <!-- Name + Title -->
       <h1 class="text-lg font-bold text-gray-800">Maheen Saleh</h1>
       <p class="text-xs text-gray-600 text-center mb-6">AI Software Engineer<br>Researcher | Problem Solver</p>
 
       <!-- Navigation -->
       <nav class="space-y-2 w-full text-sm">
-        <!-- Intro -->
         <a href="#intro"
           class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
-          <i class="fas fa-user"></i>
-          <span class="ml-2">Introduction</span>
+          <i class="fas fa-user"></i><span class="ml-2">About Me</span>
         </a>
-
-        <!-- Experience -->
         <a href="#experience"
           class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
-          <!-- Work Experience -->
-          <i class="fas fa-briefcase"></i>
-          <span class="ml-2">Work Experience</span>
+          <i class="fas fa-briefcase"></i><span class="ml-2">Work Experience</span>
         </a>
-
-                <!-- Skills -->
         <a href="#skills"
           class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
-          <!-- Skills -->
-          <i class="fas fa-cogs"></i> <!-- (or fa-tools if you prefer tools instead of gear) -->
-          <span class="ml-2">Skills</span>
+          <i class="fas fa-cogs"></i><span class="ml-2">Skills</span>
         </a>
-
-        <!-- Projects -->
         <a href="#projects"
           class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
-          <!-- Projects -->
-          <i class="fas fa-folder"></i>
-          <span class="ml-2">Projects</span>
+          <i class="fas fa-folder"></i><span class="ml-2">Projects</span>
         </a>
-
-        <!-- Education -->
         <a href="#education"
           class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
-          <!-- Education (Graduation Cap) -->
-          <!-- Education -->
-          <i class="fas fa-graduation-cap"></i>
-          <span class="ml-2">Education</span>
+          <i class="fas fa-graduation-cap"></i><span class="ml-2">Education</span>
         </a>
-
-        <!-- Contact -->
         <a href="#contact"
           class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
-          <!-- Contact -->
-          <i class="fas fa-envelope"></i>
-          <span class="ml-2">Contact</span>
+          <i class="fas fa-envelope"></i><span class="ml-2">Contact</span>
         </a>
       </nav>
     </div>
 
-    <!-- Bottom Section (moved up with mt-auto) -->
+    <!-- Bottom Section -->
     <div class="p-6 text-xs text-gray-500 text-center border-t border-gray-200 mt-auto mb-8">
       <div class="space-y-3 mb-4">
         <a href="https://www.linkedin.com/in/maheensaleh40/" target="_blank"
@@ -92,221 +66,192 @@
         <a href="mailto:salehmaheen@gmail.com" class="flex items-center justify-center text-blue-600 hover:underline">
           <i class="fas fa-envelope mr-2"></i>Email
         </a>
-
-
       </div>
       <p class="text-gray-400">© 2025 Maheen Saleh</p>
     </div>
   </aside>
 
+  <!-- Mobile Navbar -->
+  <header class="md:hidden fixed top-0 left-0 right-0 bg-gray-100 border-b border-gray-200 z-20">
+    <div class="flex items-center justify-between p-4">
+      <h1 class="font-bold">Maheen Saleh</h1>
+      <button id="menu-toggle" class="text-gray-700 text-xl">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="hidden flex-col space-y-2 px-4 pb-4">
+      <a href="#intro" class="block py-2 text-gray-700 hover:text-blue-600">About Me</a>
+      <a href="#experience" class="block py-2 text-gray-700 hover:text-blue-600">Work Experience</a>
+      <a href="#skills" class="block py-2 text-gray-700 hover:text-blue-600">Skills</a>
+      <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-600">Projects</a>
+      <a href="#education" class="block py-2 text-gray-700 hover:text-blue-600">Education</a>
+      <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+    </nav>
+  </header>
 
   <!-- Main Content -->
-  <main class="ml-56 flex-1">
-
+  <main class="md:ml-56 pt-16 md:pt-0 flex-1">
 
     <!-- Intro -->
     <section id="intro" class="min-h-screen flex flex-col justify-center items-center text-center px-6">
 
-      <!-- Greeting + Profile Picture -->
-      <div class="max-w-3xl w-full flex flex-col md:flex-row items-center md:items-end md:justify-between gap-8 mb-8">
-        <!-- Greeting (Left) -->
-        <div class="text-center md:text-left">
-          <h2 class="text-3xl md:text-4xl font-bold mb-2">Hi, I’m Maheen 👋</h2>
-          <p class="text-base md:text-lg text-gray-700 mb-8">
+      <div
+        class="max-w-3xl w-full flex flex-col md:flex-row items-center md:items-end md:justify-between gap-6 md:gap-8 mb-8">
+        <div class="text-center md:text-left order-2 md:order-1">
+          <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2">Hi, I’m Maheen 👋</h2>
+          <p class="text-sm sm:text-base md:text-lg text-gray-700 mb-6">
             👩‍💻 AI Software Engineer | Researcher | Problem Solver
           </p>
         </div>
-
-        <!-- Profile Picture (Right) -->
-        <div>
-          <img src="data/profile.jpeg" alt="Maheen Saleh" class="w-32 h-32 rounded-full shadow-lg object-cover">
+        <div class="order-1 md:order-2">
+          <img src="data/profile.jpeg" alt="Maheen Saleh"
+            class="w-24 sm:w-28 md:w-32 h-auto rounded-full shadow-lg object-cover">
         </div>
       </div>
 
-      <!-- Summary Card -->
       <div class="max-w-3xl bg-white shadow-lg rounded-xl p-8 text-left text-gray-600">
-        <p class="mb-4">
-                    I love to work with text and images !
-        </p>
-      
-        <p class="mb-4">
-          I specialize in building end-to-end AI applications, from dataset curation and research
+        <p class="mb-4">I love to work with text and images!</p>
+        <p class="mb-4">I specialize in building end-to-end AI applications, from dataset curation and research
           to model development and deployment. Currently, I’m pursuing my M.Sc. in Data Science and AI
-          at Saarland University.
-        </p>
-        <p class="mb-4">
-          My thesis focuses on creating high-quality video-text datasets to improve video–language
+          at Saarland University.</p>
+        <p class="mb-4">My thesis focuses on creating high-quality video-text datasets to improve video–language
           understanding, part of which was presented at multiple
           <span class="font-semibold text-gray-800">CVPR 2025 Workshops</span>.
         </p>
-        <p class="mb-4">
-          As an AI Engineer and Researcher, I’ve developed applications in vision and NLP (LLMs) like
+        <p class="mb-4">As an AI Engineer and Researcher, I’ve developed applications in vision and NLP (LLMs) like
           real-time object detection optimized with TensorRT, RAG-based chatbots with LangChain & Gemini API,
-          and OCR-powered document analysis with Django.
-        </p>
-        <p>
-          My skills span across Python AI libraries, DevOps tools (Docker, AWS, Git, Linux),
-          and development frameworks (Django, FastAPI, JavaScript).
-        </p>
-
-          <p>
-          Find more details in the other sections !
-        </p>
+          and OCR-powered document analysis with Django.</p>
+        <p class="mb-4">My skills span across Python AI libraries, DevOps tools (Docker, AWS, Git, Linux),
+          and development frameworks (Django, FastAPI, JavaScript).</p>
+        <p>Find more details in the other sections!</p>
       </div>
 
-      <!-- Chatbot CTA -->
       <div class="mt-10">
         <a href="https://huggingface.co/spaces/maheensaleh40/PersonalChatbot" target="_blank"
           class="px-6 py-3 bg-blue-600 text-white rounded-full shadow hover:bg-blue-700 transition">
           🤖 Try My Profile ChatBot
         </a>
       </div>
+    </section>
 
-      <!-- Social Links -->
-      <div class="mt-8 flex space-x-6">
-        <a href="https://www.linkedin.com/in/maheensaleh40/" class="flex items-center text-blue-600 hover:underline">
-          <i class="fab fa-linkedin mr-2"></i>LinkedIn
-        </a>
-        <a href="https://github.com/maheensaleh" class="flex items-center text-blue-600 hover:underline">
-          <i class="fab fa-github mr-2"></i>GitHub
-        </a>
-        <a href="mailto:salehmaheen@gmail.com" class="flex items-center text-blue-600 hover:underline">
-          <i class="fas fa-envelope mr-2"></i>Email
-        </a>
+    <!-- Work Experience -->
+    <section id="experience" class="py-16 px-6 max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold text-center mb-10">Work Experience</h2>
+      <!-- MPI -->
+      <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+        <h3 class="text-xl font-bold">AI Research Assistant</h3>
+        <p class="text-gray-600">MPI, Saarbrücken, Germany | Jun 2024 – Present</p>
+        <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+          <li>Employed Docker container for downloading and processing large-scale video datasets (550K videos)</li>
+          <li>Reduced dataset storage space by 40% through optimized video preprocessing</li>
+          <li>Transformed noisy video subtitles into high quality captions using HuggingFace and OpenAI API LLMs</li>
+          <li>Fine-tuned video-language models with LLM-generated captions, improving BLEU scores by 18.9%</li>
+        </ul>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Docker</span>
+          <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">LLMs</span>
+          <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Video-Language Models</span>
+        </div>
+      </div>
+      <!-- DFKI -->
+      <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+        <h3 class="text-xl font-bold">AI Research Assistant</h3>
+        <p class="text-gray-600">DFKI, Saarbrücken, Germany | Jul 2023 – May 2024</p>
+        <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+          <li>Designed a Docker container for real-time object detection, quantized the detection model for 10× faster inference</li>
+          <li>Fine-tuned DenseNet169 vision model for steel scrap classification achieving 10.5% gain in precision</li>
+          <li>Evaluated carbon consumption for 8 vision models during training and inference</li>
+        </ul>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Object Detection</span>
+          <span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm rounded-full">DenseNet169</span>
+          <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">Carbon Evaluation</span>
+        </div>
+      </div>
+      <!-- Squarera -->
+      <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+        <h3 class="text-xl font-bold">Associate Software Engineer</h3>
+        <p class="text-gray-600">Squarera, UK (Remote) | Sep 2021 – Mar 2023</p>
+        <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+          <li>Built an ID verification system with EasyOCR, OpenCV, and Django, enabling real-time document analysis with 80% accuracy</li>
+          <li>Implemented object recognition and tracking pipeline for real-time CCTV video streams with TensorFlow, Django REST API and Node.js</li>
+          <li>Engineered robust ETL pipelines using Oracle and MS SQL for product development data</li>
+          <li>Automated KYC data collection from UK Company House records using Scrapy, Django REST API, and scheduled workflows</li>
+        </ul>
+        <div class="flex flex-wrap gap-2 mt-4">
+          <span class="px-3 py-1 bg-pink-100 text-pink-700 text-sm rounded-full">OCR</span>
+          <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">ETL</span>
+          <span class="px-3 py-1 bg-teal-100 text-teal-700 text-sm rounded-full">CCTV Tracking</span>
+        </div>
       </div>
     </section>
 
+    <!-- Skills -->
+    <section id="skills" class="py-16 px-6 max-w-5xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-10 text-center">Skills</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
 
+        <!-- ML & AI -->
+        <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
+          <i class="fas fa-robot text-3xl text-blue-600 mb-4 block text-center"></i>
+          <h3 class="font-bold mb-4 text-center">ML & AI</h3>
+          <div class="flex flex-wrap gap-2 justify-center text-sm">
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">PyTorch</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">HuggingFace</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">OpenCV</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">LangChain</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">OpenAI API</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">Scikit-learn</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">Computer Vision</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">Prompt Engineering</span>
+            <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">Multi-modal Learning</span>
+          </div>
+        </div>
 
+        <!-- Development -->
+        <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
+          <i class="fas fa-code text-3xl text-green-600 mb-4 block text-center"></i>
+          <h3 class="font-bold mb-4 text-center">Development</h3>
+          <div class="flex flex-wrap gap-2 justify-center text-sm">
+            <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full">Django</span>
+            <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full">Flask</span>
+            <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full">Streamlit</span>
+            <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full">JavaScript</span>
+            <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full">Node.js</span>
+            <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full">SQL / NoSQL</span>
+          </div>
+        </div>
 
-<!-- Work Experience -->
-<section id="experience" class="py-16 px-6 max-w-4xl mx-auto">
-  <h2 class="text-3xl font-semibold text-center mb-10">Work Experience</h2>
-  
-  <!-- MPI -->
-  <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
-    <h3 class="text-xl font-bold">AI Research Assistant</h3>
-    <p class="text-gray-600">MPI, Saarbrücken, Germany | Jun 2024 – Present</p>
-    <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
-      <li>Employed Docker container for downloading and processing large-scale video datasets (550K videos)</li>
-      <li>Reduced dataset storage space by 40% through optimized video preprocessing</li>
-      <li>Transformed noisy video subtitles into high quality captions using HuggingFace and OpenAI API LLMs with prompt engineering (CVPR 2025 Workshop)</li>
-      <li>Fine-tuned video-language models with LLM-generated captions, improving video chapter generation BLEU scores by 18.9%</li>
-    </ul>
-    <div class="flex flex-wrap gap-2 mt-4">
-      <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Docker</span>
-      <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">LLMs</span>
-      <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Video-Language Models</span>
-    </div>
-  </div>
+        <!-- DevOps -->
+        <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
+          <i class="fas fa-server text-3xl text-purple-600 mb-4 block text-center"></i>
+          <h3 class="font-bold mb-4 text-center">DevOps</h3>
+          <div class="flex flex-wrap gap-2 justify-center text-sm">
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Docker</span>
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full">AWS (SageMaker, EC2, Lambda, S3)</span>
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full">WandB</span>
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Neptune</span>
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Git</span>
+            <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Linux</span>
+          </div>
+        </div>
 
-  <!-- DFKI -->
-  <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
-    <h3 class="text-xl font-bold">AI Research Assistant</h3>
-    <p class="text-gray-600">DFKI, Saarbrücken, Germany | Jul 2023 – May 2024</p>
-    <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
-      <li>Designed a Docker container for real-time object detection, quantized the detection model for 10× faster inference</li>
-      <li>Fine-tuned DenseNet169 vision model for steel scrap classification achieving 10.5% gain in precision</li>
-      <li>Evaluated carbon consumption for 8 vision models during training and inference</li>
-    </ul>
-    <div class="flex flex-wrap gap-2 mt-4">
-      <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Object Detection</span>
-      <span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm rounded-full">DenseNet169</span>
-      <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">Carbon Evaluation</span>
-    </div>
-  </div>
-
-  <!-- Squarera -->
-  <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
-    <h3 class="text-xl font-bold">Associate Software Engineer</h3>
-    <p class="text-gray-600">Squarera, UK (Remote) | Sep 2021 – Mar 2023</p>
-    <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
-      <li>Built an ID verification system with EasyOCR, OpenCV, and Django, enabling real-time document analysis with 80% accuracy</li>
-      <li>Implemented object recognition and tracking pipeline for real-time CCTV video streams with TensorFlow, Django REST API and Node.js</li>
-      <li>Engineered robust ETL pipelines using Oracle and MS SQL for product development data</li>
-      <li>Automated KYC data collection from UK Company House records using Scrapy, Django REST API, and scheduled workflows, reducing manual processing effort</li>
-    </ul>
-    <div class="flex flex-wrap gap-2 mt-4">
-      <span class="px-3 py-1 bg-pink-100 text-pink-700 text-sm rounded-full">OCR</span>
-      <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">ETL</span>
-      <span class="px-3 py-1 bg-teal-100 text-teal-700 text-sm rounded-full">CCTV Tracking</span>
-    </div>
-  </div>
-</section>
-
-
-<!-- Skills -->
-<section id="skills" class="py-16 px-6 max-w-5xl mx-auto">
-  <h2 class="text-3xl font-semibold mb-10 text-center">Skills</h2>
-  <div class="grid md:grid-cols-2 gap-6">
-    
-    <!-- ML & AI -->
-    <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
-      <i class="fas fa-robot text-3xl text-blue-600 mb-4 block text-center"></i>
-      <h3 class="font-bold mb-4 text-center">ML & AI</h3>
-      <div class="flex flex-wrap gap-2 justify-center text-sm">
-        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">PyTorch</span>
-        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">HuggingFace</span>
-        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">OpenCV</span>
-        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">LangChain</span>
-        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">OpenAI API</span>
-        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">Scikit-learn</span>
-        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">Computer Vision</span>
-        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">Prompt Engineering</span>
-        <span class="px-3 py-1 bg-blue-50 text-blue-700 rounded-full">Multi-modal Learning</span>
+        <!-- Languages -->
+        <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
+          <i class="fas fa-language text-3xl text-red-600 mb-4 block text-center"></i>
+          <h3 class="font-bold mb-4 text-center">Languages</h3>
+          <div class="flex flex-wrap gap-2 justify-center text-sm">
+            <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full">English (C1)</span>
+            <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full">German (A2)</span>
+          </div>
+        </div>
       </div>
-    </div>
-    
-    <!-- Development -->
-    <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
-      <i class="fas fa-code text-3xl text-green-600 mb-4 block text-center"></i>
-      <h3 class="font-bold mb-4 text-center">Development</h3>
-      <div class="flex flex-wrap gap-2 justify-center text-sm">
-        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full">Django</span>
-        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full">Flask</span>
-        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full">Streamlit</span>
-        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full">JavaScript</span>
-        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full">Node.js</span>
-        <span class="px-3 py-1 bg-green-50 text-green-700 rounded-full">SQL / NoSQL</span>
-      </div>
-    </div>
-    
-    <!-- DevOps -->
-    <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
-      <i class="fas fa-server text-3xl text-purple-600 mb-4 block text-center"></i>
-      <h3 class="font-bold mb-4 text-center">DevOps</h3>
-      <div class="flex flex-wrap gap-2 justify-center text-sm">
-        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Docker</span>
-        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full">AWS (SageMaker, EC2, Lambda, S3)</span>
-        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full">WandB</span>
-        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Neptune</span>
-        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Git</span>
-        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full">Linux</span>
-      </div>
-    </div>
-    
-    <!-- Languages -->
-    <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-lg transition">
-      <i class="fas fa-language text-3xl text-red-600 mb-4 block text-center"></i>
-      <h3 class="font-bold mb-4 text-center">Languages</h3>
-      <div class="flex flex-wrap gap-2 justify-center text-sm">
-        <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full">English (C1)</span>
-        <span class="px-3 py-1 bg-red-50 text-red-700 rounded-full">German (A2)</span>
-      </div>
-    </div>
-    
-  </div>
-</section>
+    </section>
 
-<!-- Font Awesome -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-
-
-    
     <!-- Projects -->
     <section id="projects" class="py-16 px-6 bg-gray-50">
       <h2 class="text-3xl font-semibold text-center mb-10">Projects</h2>
-      <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+      <div class="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
         <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
           <h3 class="text-xl font-bold mb-2">Profile ChatBot</h3>
           <p class="text-gray-600 mb-4">
@@ -326,14 +271,10 @@
       </div>
     </section>
 
-
-
     <!-- Education -->
     <section id="education" class="py-16 px-6 max-w-5xl mx-auto">
       <h2 class="text-3xl font-semibold text-center mb-10">Education</h2>
-
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Master's -->
+      <div class="grid sm:grid-cols-2 gap-6">
         <div class="bg-white shadow-md rounded-xl p-6 border border-gray-200 hover:shadow-lg transition">
           <h3 class="text-xl font-bold mb-2">M.Sc. Data Science and AI</h3>
           <p class="text-gray-700">Saarland University, Germany</p>
@@ -342,8 +283,6 @@
             Deutschlandstipendium Scholarship
           </span>
         </div>
-
-        <!-- Bachelor's -->
         <div class="bg-white shadow-md rounded-xl p-6 border border-gray-200 hover:shadow-lg transition">
           <h3 class="text-xl font-bold mb-2">B.Eng. Computer Systems</h3>
           <p class="text-gray-700">NED University of Engineering & Technology, Pakistan</p>
@@ -355,40 +294,31 @@
       </div>
     </section>
 
-
     <!-- Contact -->
     <section id="contact" class="py-16 px-6 text-center bg-gray-50">
       <h2 class="text-3xl font-semibold mb-6">Get In Touch</h2>
       <p class="text-gray-700 mb-8">Feel free to reach out if you’d like to collaborate or just say hello 👋</p>
-
-      <div class="flex justify-center space-x-8">
-        <!-- Email -->
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
         <a href="mailto:salehmaheen@gmail.com"
           class="flex items-center space-x-2 px-5 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">
-          <i class="fas fa-envelope"></i>
-          <span>Email</span>
+          <i class="fas fa-envelope"></i><span>Email</span>
         </a>
-
-        <!-- LinkedIn -->
         <a href="https://www.linkedin.com/in/maheensaleh40/" target="_blank"
           class="flex items-center space-x-2 px-5 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-600 transition">
-          <i class="fab fa-linkedin"></i>
-          <span>LinkedIn</span>
+          <i class="fab fa-linkedin"></i><span>LinkedIn</span>
         </a>
-
-        <!-- GitHub -->
         <a href="https://github.com/maheensaleh" target="_blank"
           class="flex items-center space-x-2 px-5 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition">
-          <i class="fab fa-github"></i>
-          <span>GitHub</span>
+          <i class="fab fa-github"></i><span>GitHub</span>
         </a>
       </div>
     </section>
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script>
-
   </main>
-</body>
 
+  <script>
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+      document.getElementById("mobile-menu").classList.toggle("hidden");
+    });
+  </script>
+</body>
 </html>
