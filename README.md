@@ -25,6 +25,7 @@ It showcases my education, work experience, projects, skills, and research in AI
 - add internships
 - add details button to education, work experiece and insternships and projects
 - add translate to german feature
+- add certificates (language cert also)
 
 
 ## 🛠️ Tech Stack
