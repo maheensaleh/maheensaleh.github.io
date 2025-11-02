@@ -16,16 +16,21 @@ It showcases my education, work experience, projects, skills, and research in AI
 
 ## Todos
 
+- tech stack tags to projects
+- add project details / either in a new window or card, add pics from project
 - add thesis details in education
-- add other projects from github
 - add levels in skills section
 - embedding the profile chatbot from hf spaces
 - improve projects section
-- make it responsive
 - add internships
+    nccs
 - add details button to education, work experiece and insternships and projects
 - add translate to german feature
 - add certificates (language cert also)
+- update portfolio like this https://shubhvashishth.github.io/
+- imrove rag for job desc yes or no
+- add links to work places and study places
+
 
 
 ## 🛠️ Tech Stack

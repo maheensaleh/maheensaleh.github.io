@@ -13,102 +13,129 @@
 
 <body class="bg-white text-gray-900 font-sans">
 
-  <!-- Sidebar (Desktop only) -->
-  <aside
-    class="hidden md:flex fixed top-0 left-0 h-full w-56 bg-gray-100 border-r border-gray-200 flex-col shadow-sm z-20">
 
-    <!-- Top Section -->
-    <div class="p-6 pt-10 flex flex-col items-center">
-      <img src="data/profile.jpeg" alt="Maheen Saleh" class="w-20 h-20 rounded-full shadow mb-4 object-cover">
-      <h1 class="text-lg font-bold text-gray-800">Maheen Saleh</h1>
-      <p class="text-xs text-gray-600 text-center mb-6">AI Software Engineer<br>Researcher | Problem Solver</p>
+<!-- Sidebar (Desktop only) -->
+<aside
+  class="hidden md:flex fixed top-0 left-0 h-full w-56 bg-gray-100 border-r border-gray-200 flex-col shadow-sm z-20">
 
+  <!-- Top Section -->
+  <div class="p-6 pt-10 flex flex-col items-center">
+    <!-- Profile -->
+    <img src="data/profile.jpeg" alt="Maheen Saleh" class="w-20 h-20 rounded-full shadow mb-4 object-cover">
+    <h1 class="text-lg font-bold text-gray-800">Maheen Saleh</h1>
+    <p class="text-xs text-gray-600 text-center mb-3">AI Software Engineer<br>Researcher | Problem Solver</p>
 
-      <!-- Navigation -->
-      <nav class="space-y-2 w-full text-sm">
-
-        <a href="https://huggingface.co/spaces/maheensaleh40/PersonalChatbot" target="_blank" rel="noopener noreferrer"
-          class="flex items-center justify-center gap-2 px-4 py-2 border border-blue-500 text-gray-700 rounded-md hover:bg-gray-100 transition text-sm">
-          <i class="fas fa-robot text-gray-500"></i>
-          Try ChatBot
-        </a>
-
-
-        <a href="#intro"
-          class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
-          <i class="fas fa-user"></i><span class="ml-2">About Me</span>
-        </a>
-        <a href="#experience"
-          class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
-          <i class="fas fa-briefcase"></i><span class="ml-2">Work Experience</span>
-        </a>
-        <a href="#skills"
-          class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
-          <i class="fas fa-cogs"></i><span class="ml-2">Skills</span>
-        </a>
-        <a href="#projects"
-          class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
-          <i class="fas fa-folder"></i><span class="ml-2">Projects</span>
-        </a>
-        <a href="#education"
-          class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
-          <i class="fas fa-graduation-cap"></i><span class="ml-2">Education</span>
-        </a>
-
-
-
-        <a href="#contact"
-          class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
-          <i class="fas fa-envelope"></i><span class="ml-2">Contact</span>
-        </a>
-      </nav>
+    <!-- Contact Links (larger, elegant) -->
+    <div class="flex items-center justify-center gap-5 text-gray-600 text-lg mb-6">
+      <a href="https://www.linkedin.com/in/maheensaleh40/" target="_blank"
+        class="hover:text-blue-600 transition" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/maheensaleh" target="_blank"
+        class="hover:text-gray-900 transition" title="GitHub">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:salehmaheen@gmail.com"
+        class="hover:text-red-600 transition" title="Email">
+        <i class="fas fa-envelope"></i>
+      </a>
     </div>
 
+    <!-- Chatbot CTA -->
+    <a href="https://huggingface.co/spaces/maheensaleh40/PersonalChatbot" target="_blank" rel="noopener noreferrer"
+      class="flex items-center justify-center gap-2 px-4 py-2 border border-blue-500 text-blue-700 bg-blue-50 rounded-md hover:bg-blue-100 transition text-sm mb-6 w-full">
+      <i class="fas fa-robot"></i>
+      Try My ChatBot
+    </a>
+
+    <!-- Navigation -->
+    <nav class="space-y-2 w-full text-sm">
+      <a href="#intro"
+        class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+        <i class="fas fa-user"></i><span class="ml-2">About Me</span>
+      </a>
+      <a href="#experience"
+        class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+        <i class="fas fa-briefcase"></i><span class="ml-2">Work Experience</span>
+      </a>
+      <a href="#skills"
+        class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+        <i class="fas fa-cogs"></i><span class="ml-2">Skills</span>
+      </a>
+      <a href="#projects"
+        class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+        <i class="fas fa-folder"></i><span class="ml-2">Projects</span>
+      </a>
+      <a href="#education"
+        class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+        <i class="fas fa-graduation-cap"></i><span class="ml-2">Education</span>
+      </a>
+      <a href="#contact"
+        class="flex items-center px-3 py-2 rounded-md text-gray-700 hover:bg-blue-100 hover:text-blue-600 transition">
+        <i class="fas fa-envelope"></i><span class="ml-2">Contact</span>
+      </a>
+    </nav>
+  </div>
+
+  <!-- Bottom Section -->
+  <div class="p-4 text-[0.65rem] text-gray-400 text-center border-t border-gray-200 mt-auto mb-4">
+    <p>Made with ❤️ using ChatGPT</p>
+    <p>© 2025 Maheen Saleh</p>
+  </div>
+</aside>
 
 
-    <!-- Bottom Section -->
-    <div class="p-6 text-xs text-gray-500 text-center border-t border-gray-200 mt-auto mb-8">
-      <div class="space-y-3 mb-4">
+
+<!-- Mobile Navbar -->
+<header class="md:hidden fixed top-0 left-0 right-0 bg-gray-100 border-b border-gray-200 z-20">
+  <div class="flex items-center justify-between p-4">
+    <h1 class="font-bold text-gray-800">Maheen Saleh</h1>
+    <button id="menu-toggle" class="text-gray-700 text-xl">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+
+  <!-- Collapsible Menu -->
+  <nav id="mobile-menu" class="hidden flex-col space-y-2 px-4 pb-4">
+    <!-- Profile Summary -->
+    <div class="flex flex-col items-center mt-2 mb-3">
+      <img src="data/profile.jpeg" alt="Maheen Saleh" class="w-16 h-16 rounded-full shadow mb-2 object-cover">
+      <p class="text-xs text-gray-600 text-center">AI Software Engineer<br>Researcher | Problem Solver</p>
+
+      <!-- Contact Icons -->
+      <div class="flex items-center justify-center gap-5 text-gray-600 text-lg mt-3">
         <a href="https://www.linkedin.com/in/maheensaleh40/" target="_blank"
-          class="flex items-center justify-center text-blue-600 hover:underline">
-          <i class="fab fa-linkedin mr-2"></i>LinkedIn
+          class="hover:text-blue-600 transition" title="LinkedIn">
+          <i class="fab fa-linkedin"></i>
         </a>
         <a href="https://github.com/maheensaleh" target="_blank"
-          class="flex items-center justify-center text-blue-600 hover:underline">
-          <i class="fab fa-github mr-2"></i>GitHub
+          class="hover:text-gray-900 transition" title="GitHub">
+          <i class="fab fa-github"></i>
         </a>
-        <a href="mailto:salehmaheen@gmail.com" class="flex items-center justify-center text-blue-600 hover:underline">
-          <i class="fas fa-envelope mr-2"></i>Email
+        <a href="mailto:salehmaheen@gmail.com"
+          class="hover:text-red-600 transition" title="Email">
+          <i class="fas fa-envelope"></i>
         </a>
       </div>
-      <p class="text-gray-400">Made with ❤️ using ChatGPT</p>
-      <p class="text-gray-400">© 2025 Maheen Saleh</p>
     </div>
-  </aside>
 
-  <!-- Mobile Navbar -->
-  <header class="md:hidden fixed top-0 left-0 right-0 bg-gray-100 border-b border-gray-200 z-20">
-    <div class="flex items-center justify-between p-4">
-      <h1 class="font-bold">Maheen Saleh</h1>
-      <button id="menu-toggle" class="text-gray-700 text-xl">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
-    <nav id="mobile-menu" class="hidden flex-col space-y-2 px-4 pb-4">
+    <!-- Chatbot CTA -->
+    <a href="https://huggingface.co/spaces/maheensaleh40/PersonalChatbot"
+      target="_blank" rel="noopener noreferrer"
+      class="mt-3 flex items-center justify-center gap-2 px-4 py-2 border border-blue-500 text-blue-700 rounded-md bg-blue-50 hover:bg-blue-100 transition text-sm">
+      <i class="fas fa-robot"></i>
+      Try ChatBot
+    </a>
 
-      <a href="https://huggingface.co/spaces/maheensaleh40/PersonalChatbot" target="_blank" rel="noopener noreferrer"
-        class="mt-3 flex items-center justify-center gap-2 px-4 py-2 border border-blue-500 text-gray-700 rounded-md hover:bg-gray-100 transition text-sm">
-        <i class="fas fa-robot text-gray-500"></i>
-        Try ChatBot
-      </a>
-      <a href="#intro" class="block py-2 text-gray-700 hover:text-blue-600">About Me</a>
-      <a href="#experience" class="block py-2 text-gray-700 hover:text-blue-600">Work Experience</a>
-      <a href="#skills" class="block py-2 text-gray-700 hover:text-blue-600">Skills</a>
-      <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-600">Projects</a>
-      <a href="#education" class="block py-2 text-gray-700 hover:text-blue-600">Education</a>
-      <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
-    </nav>
-  </header>
+    <!-- Navigation Links -->
+    <a href="#intro" class="block py-2 text-gray-700 hover:text-blue-600">About Me</a>
+    <a href="#experience" class="block py-2 text-gray-700 hover:text-blue-600">Work Experience</a>
+    <a href="#skills" class="block py-2 text-gray-700 hover:text-blue-600">Skills</a>
+    <a href="#projects" class="block py-2 text-gray-700 hover:text-blue-600">Projects</a>
+    <a href="#education" class="block py-2 text-gray-700 hover:text-blue-600">Education</a>
+    <a href="#contact" class="block py-2 text-gray-700 hover:text-blue-600">Contact</a>
+  </nav>
+</header>
 
   <!-- Main Content -->
   <main class="md:ml-56 pt-16 md:pt-0 flex-1">
@@ -155,61 +182,106 @@
       </div>
     </section>
 
-    <!-- Work Experience -->
-    <section id="experience" class="py-16 px-6 max-w-4xl mx-auto">
-      <h2 class="text-3xl font-semibold text-center mb-10">Work Experience</h2>
-      <!-- MPI -->
-      <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
-        <h3 class="text-xl font-bold">AI Research Assistant</h3>
-        <p class="text-gray-600">MPI, Saarbrücken, Germany | Jun 2024 – Present</p>
-        <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
-          <li>Employed Docker container for downloading and processing large-scale video datasets (550K videos)</li>
-          <li>Reduced dataset storage space by 40% through optimized video preprocessing</li>
-          <li>Transformed noisy video subtitles into high quality captions using HuggingFace and OpenAI API LLMs</li>
-          <li>Fine-tuned video-language models with LLM-generated captions, improving BLEU scores by 18.9%</li>
-        </ul>
-        <div class="flex flex-wrap gap-2 mt-4">
-          <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Docker</span>
-          <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">LLMs</span>
-          <span class="px-3 py-1 bg-purple-100 text-purple-700 text-sm rounded-full">Video-Language Models</span>
-        </div>
-      </div>
-      <!-- DFKI -->
-      <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
-        <h3 class="text-xl font-bold">AI Research Assistant</h3>
-        <p class="text-gray-600">DFKI, Saarbrücken, Germany | Jul 2023 – May 2024</p>
-        <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
-          <li>Designed a Docker container for real-time object detection, quantized the detection model for 10× faster
-            inference</li>
-          <li>Fine-tuned DenseNet169 vision model for steel scrap classification achieving 10.5% gain in precision</li>
-          <li>Evaluated carbon consumption for 8 vision models during training and inference</li>
-        </ul>
-        <div class="flex flex-wrap gap-2 mt-4">
-          <span class="px-3 py-1 bg-blue-100 text-blue-700 text-sm rounded-full">Object Detection</span>
-          <span class="px-3 py-1 bg-yellow-100 text-yellow-700 text-sm rounded-full">DenseNet169</span>
-          <span class="px-3 py-1 bg-green-100 text-green-700 text-sm rounded-full">Carbon Evaluation</span>
-        </div>
-      </div>
-      <!-- Squarera -->
-      <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
-        <h3 class="text-xl font-bold">Associate Software Engineer</h3>
-        <p class="text-gray-600">Squarera, UK (Remote) | Sep 2021 – Mar 2023</p>
-        <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
-          <li>Built an ID verification system with EasyOCR, OpenCV, and Django, enabling real-time document analysis
-            with 80% accuracy</li>
-          <li>Implemented object recognition and tracking pipeline for real-time CCTV video streams with TensorFlow,
-            Django REST API and Node.js</li>
-          <li>Engineered robust ETL pipelines using Oracle and MS SQL for product development data</li>
-          <li>Automated KYC data collection from UK Company House records using Scrapy, Django REST API, and scheduled
-            workflows</li>
-        </ul>
-        <div class="flex flex-wrap gap-2 mt-4">
-          <span class="px-3 py-1 bg-pink-100 text-pink-700 text-sm rounded-full">OCR</span>
-          <span class="px-3 py-1 bg-indigo-100 text-indigo-700 text-sm rounded-full">ETL</span>
-          <span class="px-3 py-1 bg-teal-100 text-teal-700 text-sm rounded-full">CCTV Tracking</span>
-        </div>
-      </div>
-    </section>
+<!-- Work Experience -->
+<section id="experience" class="py-16 px-6 max-w-4xl mx-auto">
+  <h2 class="text-3xl font-semibold text-center mb-10">Work Experience</h2>
+
+  <!-- MPI -->
+  <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+    <div class="flex items-center justify-between">
+      <h3 class="text-xl font-bold flex items-center gap-2">
+        Max Planck Institute for Informatics 
+        <a href="https://www.mpi-inf.mpg.de/departments/computer-vision-and-machine-learning"
+           target="_blank" rel="noopener noreferrer"
+           class="text-blue-600 transition" title="Visit Company Website">
+          <i class="fas fa-globe text-sm"></i>
+        </a>
+      </h3>
+    </div>
+    <p class="text-gray-700 mt-1 font-medium">AI Research Assistant</p>
+    <p class="text-gray-500 text-sm">Saarbrücken, Germany</p>
+
+    <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+      <li>Employed Docker container for downloading and processing large-scale video datasets (550K videos)</li>
+      <li>Reduced dataset storage space by 40% through optimized video preprocessing</li>
+      <li>Transformed noisy video subtitles into high quality captions using HuggingFace and OpenAI API LLMs</li>
+      <li>Fine-tuned video-language models with LLM-generated captions, improving BLEU scores by 18.9%</li>
+    </ul>
+
+    <div class="flex flex-wrap gap-2 mt-4">
+      <span class="px-3 py-1 border border-blue-500 text-blue-600 text-sm rounded-full">Docker</span>
+      <span class="px-3 py-1 border border-blue-500 text-blue-600 text-sm rounded-full">LLMs</span>
+      <span class="px-3 py-1 border border-blue-500 text-blue-600 text-sm rounded-full">Video-Language Models</span>
+    </div>
+
+    <p class="text-gray-500 text-sm text-right mt-4">Jun 2024 – Present</p>
+  </div>
+
+  <!-- DFKI -->
+  <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+    <div class="flex items-center justify-between">
+      <h3 class="text-xl font-bold flex items-center gap-2">
+        Deutsches Forschungszentrum für Künstliche Intelligenz
+        <a href="https://www.dfki.de/web/forschung/forschungsbereiche/smart-service-engineering"
+           target="_blank" rel="noopener noreferrer"
+           class="text-blue-600 transition" title="Visit Company Website">
+          <i class="fas fa-globe text-sm"></i>
+        </a>
+      </h3>
+    </div>
+    <p class="text-gray-700 mt-1 font-medium">AI Research Assistant</p>
+    <p class="text-gray-500 text-sm">Saarbrücken, Germany</p>
+
+    <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+      <li>Designed a Docker container for real-time object detection, quantized the detection model for 10× faster inference</li>
+      <li>Fine-tuned DenseNet169 vision model for steel scrap classification achieving 10.5% gain in precision</li>
+      <li>Evaluated carbon consumption for 8 vision models during training and inference</li>
+    </ul>
+
+    <div class="flex flex-wrap gap-2 mt-4">
+      <span class="px-3 py-1 border border-blue-500 text-blue-600 text-sm rounded-full">Object Detection</span>
+      <span class="px-3 py-1 border border-blue-500 text-blue-600 text-sm rounded-full">DenseNet169</span>
+      <span class="px-3 py-1 border border-blue-500 text-blue-600 text-sm rounded-full">Carbon Evaluation</span>
+    </div>
+
+    <p class="text-gray-500 text-sm text-right mt-4">Jul 2023 – May 2024</p>
+  </div>
+
+  <!-- Squarera -->
+  <div class="bg-white shadow-lg rounded-xl p-6 mb-6">
+    <div class="flex items-center justify-between">
+      <h3 class="text-xl font-bold flex items-center gap-2">
+        Squarera, A DataPillar Company
+        <a href="https://squarera.com/"
+           target="_blank" rel="noopener noreferrer"
+           class="text-blue-600 transition" title="Visit Company Website">
+          <i class="fas fa-globe text-sm"></i>
+        </a>
+      </h3>
+    </div>
+    <p class="text-gray-700 mt-1 font-medium">Associate Software Engineer</p>
+    <p class="text-gray-500 text-sm">UK (Remote)</p>
+
+    <ul class="list-disc list-inside text-gray-700 mt-4 space-y-2">
+      <li>Built an ID verification system with EasyOCR, OpenCV, and Django, enabling real-time document analysis with 80% accuracy</li>
+      <li>Implemented object recognition and tracking pipeline for real-time CCTV video streams with TensorFlow, Django REST API, and Node.js</li>
+      <li>Engineered robust ETL pipelines using Oracle and MS SQL for product development data</li>
+      <li>Automated KYC data collection from UK Company House records using Scrapy, Django REST API, and scheduled workflows</li>
+    </ul>
+
+    <div class="flex flex-wrap gap-2 mt-4">
+      <span class="px-3 py-1 border border-blue-500 text-blue-600 text-sm rounded-full">OCR</span>
+      <span class="px-3 py-1 border border-blue-500 text-blue-600 text-sm rounded-full">ETL</span>
+      <span class="px-3 py-1 border border-blue-500 text-blue-600 text-sm rounded-full">CCTV Tracking</span>
+    </div>
+
+    <p class="text-gray-500 text-sm text-right mt-4">Sep 2021 – Mar 2023</p>
+  </div>
+</section>
+
+
+
+
 
     <!-- Skills -->
     <section id="skills" class="py-16 px-6 max-w-5xl mx-auto">
@@ -279,6 +351,7 @@
             <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">Flask</span>
             <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">Streamlit</span>
             <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">Node.js</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">React</span>
             <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">REST APIs</span>
             <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">Postman</span>
             <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">HTML</span>
@@ -305,8 +378,7 @@
           <h3 class="font-bold mb-4 text-center">DevOps</h3>
           <div class="flex flex-wrap gap-2 justify-center text-sm">
             <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">Docker</span>
-            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">AWS (SageMaker,
-              EC2, Lambda, S3)</span>
+            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">AWS (EC2, Lambda, S3)</span>
             <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">WandB</span>
             <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">Neptune</span>
             <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full hover:bg-gray-200 transition">Git</span>
@@ -349,51 +421,185 @@
       </div>
     </section>
 
-    <!-- Projects -->
-    <section id="projects" class="py-16 px-6 bg-gray-50">
-      <h2 class="text-3xl font-semibold text-center mb-10">Projects</h2>
-      <div class="grid sm:grid-cols-2 gap-6 max-w-4xl mx-auto">
-        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-bold mb-2">Profile ChatBot</h3>
-          <p class="text-gray-600 mb-4">
-            Personal chatbot answering recruiter queries using portfolio documents.
-            Built with LangChain, FAISS, HuggingFace, and Gemini API.
-          </p>
-          <a href="https://huggingface.co/spaces/maheensaleh40/PersonalChatbot"
-            class="text-blue-600 hover:underline">View Project →</a>
-        </div>
-        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
-          <h3 class="text-xl font-bold mb-2">Multi-Modal Image Search</h3>
-          <p class="text-gray-600 mb-4">
-            Improved image search by combining visual and semantic embeddings from 10k COCO images.
-            Achieved 41% precision and 54% recall using ResNet50, EfficientNet, and GPT-2.
-          </p>
-        </div>
-      </div>
-    </section>
+<!-- Projects -->
+<section id="projects" class="py-16 px-6 bg-gray-50">
+  <h2 class="text-3xl font-semibold text-center mb-10">Projects</h2>
+  <div class="grid sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
 
-    <!-- Education -->
-    <section id="education" class="py-16 px-6 max-w-5xl mx-auto">
-      <h2 class="text-3xl font-semibold text-center mb-10">Education</h2>
-      <div class="grid sm:grid-cols-2 gap-6">
-        <div class="bg-white shadow-md rounded-xl p-6 border border-gray-200 hover:shadow-lg transition">
-          <h3 class="text-xl font-bold mb-2">M.Sc. Data Science and AI</h3>
-          <p class="text-gray-700">Saarland University, Germany</p>
-          <p class="text-gray-600 mb-3">CGPA: <span class="font-semibold">1,9 </span></p>
-          <span class="inline-block px-3 py-1 text-sm bg-blue-100 text-blue-700 rounded-full">
-            Deutschlandstipendium Scholarship
-          </span>
-        </div>
-        <div class="bg-white shadow-md rounded-xl p-6 border border-gray-200 hover:shadow-lg transition">
-          <h3 class="text-xl font-bold mb-2">B.Eng. Computer Systems</h3>
-          <p class="text-gray-700">NED University of Engineering & Technology, Pakistan</p>
-          <p class="text-gray-600 mb-3">CGPA: <span class="font-semibold">1,0 </span></p>
-          <span class="inline-block px-3 py-1 text-sm bg-green-100 text-green-700 rounded-full">
-            1st Position, Ehsaas Undergraduate Scholarship
-          </span>
+    <!-- Profile ChatBot -->
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-2">Profile ChatBot</h3>
+      <p class="text-gray-600 mb-4">
+        Personal chatbot answering recruiter queries using portfolio documents.
+        Built with LangChain, FAISS, HuggingFace, and Gemini API.
+      </p>
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/maheensaleh/MyProfileChatbot"
+          target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 text-gray-800 hover:text-black transition">
+          <i class="fab fa-github"></i><span>GitHub</span>
+        </a>
+        <a href="https://huggingface.co/spaces/maheensaleh40/PersonalChatbot"
+          target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 text-blue-600 hover:text-blue-800 transition">
+          <i class="fa-solid fa-globe"></i><span>Live Demo</span>
+        </a>
+      </div>
+    </div>
+
+
+
+    <!-- Audio Chapter Generation -->
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-2">Audio Chapter Generation</h3>
+      <p class="text-gray-600 mb-4">
+        A tool that segments audio/video into multiple chapters along with chapter titles and descriptions (3–4 captions each).
+        Utilized OpenAI Whisper with HuggingFace for speech-to-text and Llama 3.1 8B Instruct with LangChain to generate chapter data from ASR text.
+      </p>
+      <a href="https://github.com/maheensaleh/VideoChapterGeneration"
+        target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 text-gray-800 hover:text-black transition">
+        <i class="fab fa-github"></i><span>GitHub</span>
+      </a>
+    </div>
+
+
+    <!-- Resume Analyzer -->
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-2">Resume Analyzer</h3>
+      <p class="text-gray-600 mb-4">
+        Analyze resumes with respect to job descriptions. Built with Django, React, and LangChain.
+      </p>
+      <a href="https://github.com/maheensaleh/ResumeAnalyzer"
+        target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 text-gray-800 hover:text-black transition">
+        <i class="fab fa-github"></i><span>GitHub</span>
+      </a>
+    </div>
+
+    <!-- Public Tender Analysis -->
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-2">Public Tender Analysis</h3>
+      <p class="text-gray-600 mb-4">
+        Completes a user-defined checklist by extracting required information from tender PDF documents.
+      </p>
+      <a href="https://github.com/maheensaleh/TenderChecklist"
+        target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 text-gray-800 hover:text-black transition">
+        <i class="fab fa-github"></i><span>GitHub</span>
+      </a>
+    </div>
+
+            <!-- Multi-Modal Image Search -->
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-2">Multi-Modal Image Search</h3>
+      <p class="text-gray-600 mb-4">
+        Improved image search by combining visual and semantic embeddings from 10k COCO images.
+        Achieved 41% precision and 54% recall using ResNet50, EfficientNet, and GPT-2.
+      </p>
+      <a href="https://github.com/maheensaleh/image2image_search_with_text_fusion"
+        target="_blank" rel="noopener noreferrer"
+        class="inline-flex items-center gap-2 text-gray-800 hover:text-black transition">
+        <i class="fab fa-github"></i><span>GitHub</span>
+      </a>
+    </div>
+
+    <!-- LLM Fine-tuning for Next Word Prediction -->
+    <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg transition">
+      <h3 class="text-xl font-bold mb-2">LLM Fine-tuning for Next Word Prediction</h3>
+      <p class="text-gray-600 mb-4">
+        Fine-tuned LLMs (XGLM, GPT-2) for next-word prediction in the Quechua language using HuggingFace.
+        Implemented full fine-tuning and three parameter-efficient methods: LoRA, BitFit, and iA3.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Education -->
+<section id="education" class="py-16 px-6 max-w-5xl mx-auto">
+  <h2 class="text-3xl font-semibold text-center mb-10">Education</h2>
+
+  <div class="grid sm:grid-cols-2 gap-6">
+
+    <!-- M.Sc. -->
+    <div class="bg-white shadow-md rounded-xl p-6 border border-gray-200 hover:shadow-lg transition">
+      <h3 class="text-xl font-bold text-gray-900 mb-1">M.Sc. Data Science and AI</h3>
+      <p class="text-gray-700 flex items-center gap-2">
+        Saarland University
+        <a href="https://www.uni-saarland.de/en/home.html" target="_blank" rel="noopener noreferrer"
+          class="text-blue-600 transition" title="Visit University Website">
+          <i class="fas fa-globe text-sm"></i>
+        </a>
+      </p>
+      <p class="text-gray-600 mt-2">CGPA: <span class="font-semibold text-gray-800">1,9</span></p>
+
+      <!-- Scholarship -->
+      <div class="mt-3">
+        <span
+          class="inline-flex items-center gap-2 px-3 py-1 text-sm border border-gray-200 text-gray-700 rounded-full">
+          <i class="fas fa-award text-gray-500 text-xs"></i>
+          Deutschlandstipendium Scholarship
+        </span>
+      </div>
+
+      <!-- Main Courses -->
+      <div class="mt-5">
+        <p class="text-sm font-medium text-gray-700 mb-2">Main Courses</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 border border-gray-200 text-gray-700 text-sm rounded-full">High-Level Computer Vision</span>
+          <span class="px-3 py-1 border border-gray-200 text-gray-700 text-sm rounded-full">Neural Networks</span>
+          <span class="px-3 py-1 border border-gray-200 text-gray-700 text-sm rounded-full">Elements of Machine Learning</span>
+          <span class="px-3 py-1 border border-gray-200 text-gray-700 text-sm rounded-full">Statistical NLP</span>
+          <span class="px-3 py-1 border border-gray-200 text-gray-700 text-sm rounded-full">Attacks Against ML Models</span>
         </div>
       </div>
-    </section>
+    </div>
+
+    <!-- B.Eng. -->
+    <div class="bg-white shadow-md rounded-xl p-6 border border-gray-200 hover:shadow-lg transition">
+      <h3 class="text-xl font-bold text-gray-900 mb-1">B.Eng. Computer Systems</h3>
+      <p class="text-gray-700 flex items-center gap-2">
+        NED University of Engineering & Technology
+        <a href="https://www.neduet.edu.pk/" target="_blank" rel="noopener noreferrer"
+          class="text-blue-600 transition" title="Visit University Website">
+          <i class="fas fa-globe text-sm"></i>
+        </a>
+      </p>
+      <p class="text-gray-600 mt-2">CGPA: <span class="font-semibold text-gray-800">1,0</span></p>
+
+      <!-- Honors -->
+      <div class="mt-3 space-y-2">
+        <span
+          class="inline-flex items-center gap-2 px-3 py-1 text-sm border border-gray-200 text-gray-700 rounded-full">
+          <i class="fas fa-trophy text-gray-500 text-xs"></i>
+          Ranked 1st in class
+        </span>
+        <span
+          class="inline-flex items-center gap-2 px-3 py-1 text-sm border border-gray-200 text-gray-700 rounded-full">
+          <i class="fas fa-award text-gray-500 text-xs"></i>
+          Ehsaas Undergraduate Scholarship
+        </span>
+      </div>
+
+      <!-- Main Courses -->
+      <div class="mt-5">
+        <p class="text-sm font-medium text-gray-700 mb-2">Main Courses</p>
+        <div class="flex flex-wrap gap-2">
+          <span class="px-3 py-1 border border-gray-200 text-gray-700 text-sm rounded-full">Artificial Intelligence</span>
+          <span class="px-3 py-1 border border-gray-200 text-gray-700 text-sm rounded-full">Machine Learning</span>
+          <span class="px-3 py-1 border border-gray-200 text-gray-700 text-sm rounded-full">Probability & Statistics</span>
+          <span class="px-3 py-1 border border-gray-200 text-gray-700 text-sm rounded-full">Computer Vision</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
     <!-- Contact -->
     <section id="contact" class="py-16 px-6 text-center bg-gray-50">
@@ -410,7 +616,7 @@
         </a>
         <a href="https://github.com/maheensaleh" target="_blank"
           class="flex items-center space-x-2 px-5 py-3 bg-gray-800 text-white rounded-full hover:bg-gray-900 transition">
-          <i class="fab fa-github"></i><span>GitHub</span>
+          <i class="fab fa-github"></i><span>Github</span>
         </a>
       </div>
     </section>
